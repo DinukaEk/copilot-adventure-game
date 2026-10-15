@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101519">
+  <meta name="description" content="A small, branching adventure beneath a restless sea.">
+  <title>The Lantern Below | A Choose Your Own Adventure</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="wordmark" href="#welcome" aria-label="The Lantern Below home">
+        <span class="wordmark-icon" aria-hidden="true"></span>
+        <span>FIELD NOTES <span class="wordmark-divider">/</span> VOL. 07</span>
+      </a>
+      <p class="header-note">AN INTERACTIVE STORY <span aria-hidden="true">&bull;</span> 8 MIN READ</p>
+    </header>
+
+    <main>
+      <section class="welcome-screen" id="welcome" aria-labelledby="welcome-title">
+        <div class="welcome-art" aria-hidden="true">
+          <span class="art-orbit orbit-one"></span>
+          <span class="art-orbit orbit-two"></span>
+          <span class="art-lighthouse"><span></span></span>
+          <span class="art-water water-one"></span>
+          <span class="art-water water-two"></span>
+          <span class="art-water water-three"></span>
+          <span class="art-spark spark-one"></span>
+          <span class="art-spark spark-two"></span>
+          <span class="art-spark spark-three"></span>
+        </div>
+        <div class="welcome-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A STORY OF TIDES &amp; SECOND CHANCES</p>
+          <h1 id="welcome-title">The Lantern<br><span>Below</span></h1>
+          <p class="welcome-description">The sea has withdrawn from the coast, leaving a drowned city in the open air. Somewhere below, a light is still burning. You have one night to find out why.</p>
+          <button class="primary-button" id="begin-button" type="button">
+            <span>Begin your journey</span>
+            <span class="button-arrow" aria-hidden="true">&rarr;</span>
+          </button>
+          <p class="welcome-footnote"><span class="footnote-dot"></span> YOUR CHOICES SHAPE THE ENDING</p>
+        </div>
+        <div class="welcome-index" aria-hidden="true"><span>01</span><span class="index-rule"></span><span>04</span></div>
+      </section>
+
+      <section class="story-screen" id="story" aria-labelledby="scene-title" hidden>
+        <div class="story-topline">
+          <p class="eyebrow"><span class="eyebrow-line"></span> THE SUNKEN COAST</p>
+          <p class="chapter-count" id="chapter-count">SCENE 01</p>
+        </div>
+        <div class="story-layout" id="story-layout">
+          <article class="scene-copy" aria-live="polite" aria-atomic="true">
+            <p class="scene-kicker" id="scene-kicker"></p>
+            <h2 id="scene-title" tabindex="-1"></h2>
+            <div class="scene-rule"><span></span><span></span><span></span></div>
+            <p class="scene-text" id="scene-text"></p>
+            <p class="scene-detail" id="scene-detail"></p>
+          </article>
+          <aside class="choice-panel" aria-label="Your choices">
+            <p class="choice-heading" id="choice-heading">WHAT WILL YOU DO?</p>
+            <div class="choice-list" id="choices"></div>
+            <p class="choice-footnote" id="choice-footnote">There is no map for this part.</p>
+          </aside>
+        </div>
+        <div class="story-footer">
+          <span class="footer-mark"><span class="footer-mark-dot"></span> FIELD NOTES 07</span>
+          <span class="footer-location">THE COAST IS LISTENING</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>AN ORIGINAL CHOOSE YOUR OWN ADVENTURE</span>
+      <span>MADE FOR THE IN-BETWEEN</span>
+    </footer>
+  </div>
+</body>
+</html>
